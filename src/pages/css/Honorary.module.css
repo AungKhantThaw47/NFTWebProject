@@ -1,0 +1,77 @@
+.main {
+    /* margin-top: 100px; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.main>span {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.List {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 40px;
+    row-gap: 40px;
+    /* box-sizing: border-box;
+    padding: 20px; */
+}
+
+.TeamItem {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white;
+    color: black; */
+    box-shadow: 4px 4px 4px 4px #000000;
+}
+
+.TeamItem>img {
+    width: 300px;
+    aspect-ratio: 1;
+    box-shadow: 4px 4px 4px 4px #000000;
+    margin-bottom: 20px;
+}
+
+.TeamItem>p {
+    width: 300px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.ProfileLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.ProfileLinks>img {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+@media screen and (max-width: 1100px) {
+    .List {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .List {
+        grid-template-columns: auto;
+    }
+}

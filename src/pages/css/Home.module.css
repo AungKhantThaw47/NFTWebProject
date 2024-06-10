@@ -1,0 +1,352 @@
+.main {
+    /* margin-top: 100px; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 100px;
+}
+
+.TwitterBanner {
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.TwitterBanner>img {
+    width: 100%;
+    height: 100%;
+}
+
+.Vision {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #302c2e;
+    color: white;
+}
+
+.Vision>span {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.Vision>img {
+    max-width: 100%;
+    /* height: 50%; */
+    max-height: 400px;
+    aspect-ratio: 2;
+    box-shadow: 0px 0px 4px 4px #0000007a;
+}
+
+.AboutVision {
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.VisionSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.VisionList {
+    /* width: 100%; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+
+/* .VisionItem {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+} */
+
+.VisionList>p {
+    /* max-width: 40%; */
+    width: auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.VisionList>p>h2 {
+    /* font-size: 25px;
+    font-weight: bold;
+    line-height: 70px; */
+    text-align: left;
+}
+
+.PillarImgBox {
+    float: right;
+    height: 300px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PillarImgBox>img {
+    height: 250px;
+    aspect-ratio: 1;
+    box-shadow: 0px 0px 4px 4px #0000007a;
+    animation: PillarImageOut 1s;
+}
+
+.PillarImgBox>img:hover {
+    animation: PillarImageIn 1s;
+    height: 280px;
+    box-shadow: 0px 0px 18px 18px #0000007a;
+}
+
+@keyframes PillarImageIn {
+    from {
+        height: 250px;
+        box-shadow: 0px 0px 4px 4px #0000007a;
+    }
+    to {
+        height: 280px;
+        box-shadow: 0px 0px 18px 18px #0000007a;
+    }
+}
+
+@keyframes PillarImageOut {
+    from {
+        height: 280px;
+        box-shadow: 0px 0px 18px 18px #0000007a;
+    }
+    to {
+        height: 250px;
+        box-shadow: 0px 0px 4px 4px #0000007a;
+    }
+}
+
+.Team {
+    margin-top: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #302c2e;
+    color: white;
+}
+
+.Team>span {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.TeamList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.TeamItem {
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white;
+    color: black; */
+    box-shadow: 0px 0px 4px 4px #0000007a;
+}
+
+.TeamItem>img {
+    width: 300px;
+    aspect-ratio: 1;
+    box-shadow: 0px 0px 4px 4px #0000007a;
+    margin-bottom: 20px;
+}
+
+.TeamItem>p {
+    width: 300px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.ProfileLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.ProfileLinks img {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.FAQ {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.FAQ>span {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.FAQ>hr {
+    width: 100%;
+    max-width: 600px;
+}
+
+.Partners {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    /* background-color: #302c2e;
+    color: white; */
+}
+
+.Partners>span {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.PartnersBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PartnersContainer {
+    scroll-behavior: smooth;
+    width: 910px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.PartnerItem {
+    overflow: hidden;
+    height: 250px;
+    flex: 0 0 250px;
+    /* aspect-ratio: 1; */
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.PartnerItem>img {
+    width: 100%;
+    aspect-ratio: 1;
+    transform: scale(1);
+    animation: PartnerImageOut 1s;
+    z-index: 1;
+}
+
+.PartnerItem>img:hover {
+    transform: scale(2);
+    animation: PartnerImageIn 1s;
+}
+
+@keyframes PartnerImageIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(2);
+    }
+}
+
+@keyframes PartnerImageOut {
+    from {
+        transform: scale(2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .PartnersContainer {
+        /* background-color: red; */
+        width: 250px;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    /* .VisionItem {
+        flex-direction: column;
+    } */
+    .VisionList {
+        grid-template-columns: auto;
+    }
+    .VisionList>div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .VisionList>p {
+        box-sizing: border-box;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .TeamList {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .PartnersContainer {
+        width: 580px;
+    }
+}

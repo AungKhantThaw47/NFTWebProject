@@ -1,0 +1,163 @@
+.main {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    z-index: 3000;
+}
+
+.LogoSector {
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.LogoSector>a {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoSector img {
+    object-fit: fill;
+    height: calc(100% - 20px);
+    aspect-ratio: 1;
+}
+
+.LogoSector span {
+    font-size: 30px;
+    color: white;
+    /* font-family: 'Pixeboy'; */
+    margin-left: 20px;
+}
+
+.NavLinks {
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.link_img {
+    height: 30px;
+    aspect-ratio: 1;
+}
+
+.icon {
+    cursor: pointer;
+    height: 40px;
+    aspect-ratio: 1;
+}
+
+.NavLinks>img {
+    padding-left: 10px;
+}
+
+.NavPopupActive {
+    /* width: 100%; */
+    /* transform: scaleX(1); */
+    transform: translateX(0px);
+}
+
+.NavPopupNotActive {
+    /* width: 0px; */
+    /* transform: scaleX(0); */
+    transform: translateX(-100vw);
+}
+
+.NavPopup {
+    width: 100%;
+    float: right;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    will-change: transform;
+    -webkit-transition: transform 1s cubic-bezier(.17, .67, .83, .67);
+    -moz-transition: transform 1s cubic-bezier(.17, .67, .83, .67);
+    -o-transition: transform 1s cubic-bezier(.17, .67, .83, .67);
+    transition: transform 1s cubic-bezier(.17, .67, .83, .67);
+    /* -webkit-transition: transform 1s ease-in-out;
+    -moz-transition: transform 1s ease-in-out;
+    -o-transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out; */
+}
+
+.NavPopup>div>a:visited {
+    color: black;
+}
+
+.NavPopup>div {
+    cursor: pointer;
+}
+
+.LinkImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.LinkImg>a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 570px) {
+    .LogoSector {
+        width: calc(100vw - 100px);
+    }
+    .NavLinks {
+        float: left;
+    }
+    .NavLinks>a {
+        display: none;
+    }
+    .NavPopup {
+        height: 100vh;
+        flex-direction: column;
+        font-size: 30px;
+        z-index: 10000;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .LogoSector span {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .LogoSector span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .LogoSector span {
+        font-size: 15px;
+    }
+}
